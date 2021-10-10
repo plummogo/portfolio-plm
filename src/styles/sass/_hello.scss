@@ -2,7 +2,7 @@
     background-color: #a6e3e9;
     min-height: 1500px;
     overflow: hidden;
-    margin-bottom: 0!important;
+    margin-bottom: 0 !important;
 }
 
 .hello-heading {
@@ -17,7 +17,7 @@
 
 .hello-img {
     display: block;
-    margin: 2% auto;
+    margin: 2% auto 0;
     content: url("/assets/hello.png");
 
     &.seperator-img {

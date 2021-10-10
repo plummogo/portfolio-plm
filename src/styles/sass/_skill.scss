@@ -42,10 +42,16 @@
     }
 }
 
+.skill-img {
+    display: block;
+    margin: 0 auto;
+    content: url("/assets/skill.png");
+    width: 305px;
+}
+
 .skill-circle-container {
     @include on-circle($item-count: 8, $circle-size: 20em, $item-size: 6em);
     margin: 5rem auto 5rem;
-    border: solid 5px #71c9ce;
 
     img {
         display: block;
