@@ -1,18 +1,21 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
 import './styles/sass/index.scss';
-import HelloThere from './components/application/Hello/HelloThere';
 import NavBar from './components/layout/NavBar';
-import reportWebVitals from './reportWebVitals';
-import Container from 'react-bootstrap/Container';
+import HelloThere from './components/application/Hello/HelloThere';
+import AboutMe from './components/application/About/AboutMe';
 import Skill from './components/application/Skills/Skill';
+import reportWebVitals from './reportWebVitals';
+import { Element } from 'react-scroll'
+
 
 ReactDOM.render(
-  <>
+  <div className='container'>
     <NavBar />
-      <HelloThere />
-      <Skill />
-  </>,
+    <HelloThere />
+    <AboutMe />
+    <Skill />
+  </div>,
   document.getElementById('root')
 );
 

@@ -2,19 +2,44 @@ import * as React from 'react';
 import Container from 'react-bootstrap/Container';
 import Navbar from 'react-bootstrap/Navbar';
 import Nav from 'react-bootstrap/Nav';
+import { Link } from "react-scroll";
 
-function NavBar() {
+const NavBar = () => {
     return (
-        <Navbar fixed='top' collapseOnSelect expand="lg" bg="dark" variant="dark">
+        <Navbar className='navbar bg-transparent' fixed='top' collapseOnSelect expand="lg" bg="dark" variant="dark">
             <Container>
-                <Navbar.Brand href="#">plummogo</Navbar.Brand>
+                <Navbar.Brand className="navbar-link pointer" onClick={() => window.scrollTo(0, 0)}>plummogo</Navbar.Brand>
                 <Navbar.Toggle aria-controls="basic-navbar-nav" />
                 <Navbar.Collapse id="basic-navbar-nav">
                     <Nav className="me-auto">
-                        <Nav.Link href="#">.aboutMe</Nav.Link>
-                        <Nav.Link href="#">.skills</Nav.Link>
-                        <Nav.Link href="#">.hobbies</Nav.Link>
-                        <Nav.Link href="#">.contact</Nav.Link>
+                        <Link
+                            to="about-container"
+                            activeClass="active"
+                            className="nav-link pointer"
+                            spy={true}>
+                            .aboutMe
+                        </Link>
+                        <Link
+                            to="skill-container"
+                            activeClass="active"
+                            className="nav-link pointer"
+                            spy={true}>
+                            .skills
+                        </Link>
+                        <Link
+                            to="hobby-container"
+                            activeClass="active"
+                            className="nav-link pointer"
+                            spy={true}>
+                            .hobbies
+                        </Link>
+                        <Link
+                            to="contact-container"
+                            activeClass="active"
+                            className="nav-link pointer"
+                            spy={true}>
+                            .contact
+                        </Link>
                     </Nav>
                     <Nav>
                         <Nav.Link href="#">.login(u,p)</Nav.Link>
@@ -23,5 +48,6 @@ function NavBar() {
             </Container>
         </Navbar>
     );
-}
+};
+
 export default NavBar;

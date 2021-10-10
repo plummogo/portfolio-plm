@@ -1,5 +1,4 @@
 import React from 'react';
-import '../../../styles/sass/_skill.scss';
 import git from '../../../assets/skills/git.png';
 import azure from '../../../assets/skills/azure.png';
 import css from '../../../assets/skills/css.png';
@@ -9,7 +8,7 @@ import react from '../../../assets/skills/react.png';
 import vscode from '../../../assets/skills/vscode.png';
 import csharp from '../../../assets/skills/csharp.png';
 
-function drawSkillCircle() {
+const drawSkillCircle = () => {
     return (
         <ul className='skill-circle-container'>
             <li><img src={git} title='Git' /></li>
@@ -22,26 +21,21 @@ function drawSkillCircle() {
             <li><img src={csharp} title='C#' /></li>
         </ul>
     );
-}
+};
 
-
-function Skill() {
+const Skill = () => {
     return (
         <div className='skill-container'>
-            <img className='skill-img' />
-            <img className='hello-img seperator-img ' />
             <h1 className='skill-heading'>.skills</h1>
-            <img className='hello-img seperator-img rotated' />
-
-            <h2 className='skill-heading skill-heading2'>Most ❤️ circle</h2>
+            <img className='skill-img' />
             {drawSkillCircle()}
-            <ul>
-                <li>Vscode</li>
+            <ul className='skill-desc-list'>
+                <li>VSCode</li>
                 <li>ReactJs</li>
-                <li>Javascript</li>
-                <li>Html</li>
-                <li>Css</li>
-                <li>c#</li>
+                <li>JS</li>
+                <li>HTML</li>
+                <li>CSS</li>
+                <li>C#</li>
             </ul>
         </div>
     );
