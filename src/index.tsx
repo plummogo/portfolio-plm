@@ -10,10 +10,8 @@ import Skill from './components/application/Skills/Skill';
 ReactDOM.render(
   <>
     <NavBar />
-    <Container>
       <HelloThere />
       <Skill />
-    </Container>
   </>,
   document.getElementById('root')
 );
