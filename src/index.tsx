@@ -6,8 +6,6 @@ import HelloThere from './components/application/Hello/HelloThere';
 import AboutMe from './components/application/About/AboutMe';
 import Skill from './components/application/Skills/Skill';
 import reportWebVitals from './reportWebVitals';
-import { Element } from 'react-scroll'
-
 
 ReactDOM.render(
   <div className='container'>
