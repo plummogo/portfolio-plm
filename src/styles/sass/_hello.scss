@@ -13,16 +13,13 @@
     }
 }
 
-.hello-img {
+.seperator-img {
+    content: url("/assets/seperator.png");
     display: block;
     margin: 2% auto;
-    content: url("/assets/hello.png");
+    width: 50%;
 
-    &.seperator-img {
-        content: url("/assets/seperator.png");
-        &.rotated {
-            transform: rotate(180deg);
-        }
-        width: 50%;
+    &.rotated {
+        transform: rotate(180deg);
     }
 }

@@ -6,14 +6,23 @@ import HelloThere from './components/application/Hello/HelloThere';
 import AboutMe from './components/application/About/AboutMe';
 import Skill from './components/application/Skills/Skill';
 import reportWebVitals from './reportWebVitals';
+import { Container, Row, Col } from 'react-bootstrap';
 
 ReactDOM.render(
-  <div className='container'>
+  <>
     <NavBar />
-    <HelloThere />
-    <AboutMe />
-    <Skill />
-  </div>,
+    <Container>
+      <Row>
+        <HelloThere />
+      </Row>
+      <Row>
+        <AboutMe />
+      </Row>
+      <Row>
+        <Skill />
+      </Row>
+    </Container>
+  </>,
   document.getElementById('root')
 );
 

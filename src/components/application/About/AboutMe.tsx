@@ -1,12 +1,45 @@
 import React from 'react';
+import { Container, Row, Col } from 'react-bootstrap';
 
-const AboutMe = () => {
-    return (
-        <div className='about-container'>
-            <img className='hello-img' />
-            <h1 className='skill-heading'>.about me</h1>
-        </div>
-    );
+class AboutMe extends React.Component {
+    render() {
+        return (
+            <Container className='about-container'>
+                <Row>
+                    <img className='hello-img' />
+                </Row>
+                <Row>
+                    <h1 className='skill-heading'>.about me</h1>
+                </Row>
+                <Row className='skill-desc-container'>
+                    <Col md={8}>
+                        {this.renderIntroduce()}
+                    </Col>
+                    <Col md={4} >
+                        {this.renderPicture()}
+                    </Col>
+                </Row>
+            </Container>
+        );
+    }
+
+    renderIntroduce = () => {
+        return (
+            <>
+                <h1>Hello there!</h1>
+                <span>spanspanspanspanspanspanspanspanspanspanspanspanspanspanspanspanspanspanspanspanspan</span>
+            </>
+        );
+    }
+
+    renderPicture = () => {
+        return (
+            <>
+                <img className='about-plm-img' src={require(`../../../assets/about/plm.png`).default} title='Hello There!' />
+                <p>Szilvási István Péter</p>
+            </>
+        );
+    }
 };
 
 export default AboutMe;
