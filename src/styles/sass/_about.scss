@@ -1,14 +1,25 @@
+h2 {
+    color: rgb(76, 204, 203);
+}
+
 .about-plm-col {
     margin: 0 auto;
 }
 
 .about-plm-img {
+    text-align: center;
+    margin: 0 auto;
+    display: block;
     width: 70%;
     border-radius: 25px;
     filter: grayscale(100);
     &:hover {
         filter: grayscale(0);
     }
+}
+
+.about-plm-desc {
+    text-align: center;
 }
 
 .about-hello-img {
