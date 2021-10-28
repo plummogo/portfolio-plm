@@ -41,7 +41,7 @@ class Skill extends React.Component<{}, SkillState> {
                         id={name}
                         tabIndex={index}
                         onClick={async (e) => await this.handleClick(name, e)}
-                        src={require(`../../../assets/skills/${name}.png`).default} />
+                        src={require(`../../../assets/img/skills/${name}.png`).default} />
                 </li>
             );
         });

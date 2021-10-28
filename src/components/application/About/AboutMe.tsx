@@ -26,7 +26,7 @@ class AboutMe extends React.Component {
     renderIntroduce = () => {
         return (
             <>
-                <h1>Hello there!</h1>
+                <h2 className='skill-heading skill-heading2'>Hello there!</h2>
                 <span>spanspanspanspanspanspanspanspanspanspanspanspanspanspanspanspanspanspanspanspanspan</span>
             </>
         );
@@ -35,8 +35,8 @@ class AboutMe extends React.Component {
     renderPicture = () => {
         return (
             <>
-                <img className='about-plm-img' src={require(`../../../assets/about/plm.png`).default} title='Hello There!' />
-                <p>Szilvási István Péter</p>
+                <img className='about-plm-img' src={require(`../../../assets/img/about/plm.png`).default} title='Hello There!' />
+                <p className='about-plm-desc'>Szilvási István Péter</p>
             </>
         );
     }

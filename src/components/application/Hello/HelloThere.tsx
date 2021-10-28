@@ -1,4 +1,5 @@
 import React from 'react';
+import { withLocalize } from 'react-localize-redux';
 
 const HelloThere = () => {
   return (
@@ -13,4 +14,4 @@ const HelloThere = () => {
   );
 }
 
-export default HelloThere;
+export default withLocalize(HelloThere);
