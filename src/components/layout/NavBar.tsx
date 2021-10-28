@@ -2,6 +2,10 @@ import Container from 'react-bootstrap/Container';
 import Navbar from 'react-bootstrap/Navbar';
 import Nav from 'react-bootstrap/Nav';
 import { Link } from "react-scroll";
+import { Dropdown } from 'react-bootstrap';
+import DropdownToggle from 'react-bootstrap/esm/DropdownToggle';
+import DropdownMenu from 'react-bootstrap/esm/DropdownMenu';
+import DropdownItem from 'react-bootstrap/esm/DropdownItem';
 
 const NavBar = () => {
     return (
@@ -41,6 +45,14 @@ const NavBar = () => {
                         </Link>
                     </Nav>
                     <Nav>
+                        <Dropdown>
+                            <DropdownToggle className="bg-transparent no-border">.setLanguage</DropdownToggle>
+                            <DropdownMenu>
+                                <DropdownItem header>en</DropdownItem>
+                                <DropdownItem divider />
+                                <DropdownItem header>hu</DropdownItem>
+                            </DropdownMenu>
+                        </Dropdown>
                         <Nav.Link href="#">.login(u,p)</Nav.Link>
                     </Nav>
                 </Navbar.Collapse>
