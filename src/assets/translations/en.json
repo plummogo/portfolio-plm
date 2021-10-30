@@ -1,0 +1,22 @@
+{
+    "navbar.about": ".aboutMe",
+    "navbar.skills": ".skills",
+    "navbar.hobbies": ".hobbies",
+    "navbar.contact": ".conatct",
+    "navbar.lang": ".setLang",
+    "navbar.login": ".login(u,p)",
+    "hello.name": "I'm Péter Szilvási",
+    "hello.position": ".softwareDeveloper",
+    "about.greeting": "Hello there!",
+    "about.desc": "descdescdescdescdescdescdescdescdescdescdescdescdescdescdescdescdescdescdescdescdescdescdescdescdescdescdescdescdescdescdescdescdescdescdescdescdescdescdescdescdescdescdescdescdescdescdescdescdescdescdescdescdescdescdescdesc",
+    "skills.vscode": "I like using Visual Studio Code because its light-weight and easy-to use functionality",
+    "skills.csharp": "After my first language (TurboPascal), I love in. Nowadays I prefer learning more Node.Js",
+    "skills.git": "I like both using GIT and TFVC. I prefer using GIT because of managing remote repositories is better",
+    "skills.azure": "I prefer using WebApp publishment to the cloud with the Portal, Azure Devops has awesome CI/CD feature as well. As a Scrum Master, I like Azure boards because, the WorkItem definitions can be modified as the team wants",
+    "skills.html": "Some thinks it is a language, I just remove them from my friends",
+    "skills.css": "I like fancy pages, I prefer using SASS",
+    "skills.js": "I like JavaScript who does not, just watch Netflix or Youtube without it 😉",
+    "skills.react": "Like heaven with typescript, I used ASP.NET with Razor syntax and AngularJs, but React is my cup of Like heaven with typescript, I used ASP.NET with Razor syntax and AngularJs, but React is my cup of tea.",
+    "skills.yoda": "Do or do not. There is no try.",
+    "skills.default": "Please click on skill circle, to see my opinion!"
+}

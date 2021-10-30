@@ -6,8 +6,21 @@ import { Dropdown } from 'react-bootstrap';
 import DropdownToggle from 'react-bootstrap/esm/DropdownToggle';
 import DropdownMenu from 'react-bootstrap/esm/DropdownMenu';
 import DropdownItem from 'react-bootstrap/esm/DropdownItem';
+import { useTranslation } from "react-i18next";
+import { useState } from 'react';
 
 const NavBar = () => {
+    const { t, i18n } = useTranslation();
+    const [isActive, setActive] = useState(false);
+
+    const toggleLang = (lang: string) => {
+        setActive(!isActive);
+        i18n.changeLanguage(lang);
+    };
+
+    let huLangActive = !isActive ? "nav-active" : "";
+    let enLangActive = isActive ? "nav-active" : "";
+
     return (
         <Navbar className='navbar bg-transparent' fixed='top' collapseOnSelect expand="lg" bg="dark" variant="dark">
             <Container>
@@ -17,48 +30,48 @@ const NavBar = () => {
                     <Nav className="me-auto">
                         <Link
                             to="about-container"
-                            activeClass="active"
+                            activeClass="nav-active"
                             className="nav-link pointer"
                             spy={true}>
-                            .aboutMe
+                            {t('navbar.about')}
                         </Link>
                         <Link
                             to="skill-container"
-                            activeClass="active"
+                            activeClass="nav-active"
                             className="nav-link pointer"
                             spy={true}>
-                            .skills
+                            {t('navbar.skills')}
                         </Link>
                         <Link
                             to="hobby-container"
-                            activeClass="active"
+                            activeClass="nav-active"
                             className="nav-link pointer"
                             spy={true}>
-                            .hobbies
+                            {t('navbar.hobbies')}
                         </Link>
                         <Link
                             to="contact-container"
-                            activeClass="active"
+                            activeClass="nav-active"
                             className="nav-link pointer"
                             spy={true}>
-                            .contact
+                            {t('navbar.contact')}
                         </Link>
                     </Nav>
                     <Nav>
                         <Dropdown>
-                            <DropdownToggle className="bg-transparent no-border">.setLanguage</DropdownToggle>
+                            <DropdownToggle className="bg-transparent no-border">
+                                {t('navbar.lang')}</DropdownToggle>
                             <DropdownMenu>
-                                <DropdownItem header>en</DropdownItem>
-                                <DropdownItem divider />
-                                <DropdownItem header>hu</DropdownItem>
+                                <DropdownItem className={enLangActive} onClick={() => toggleLang('en')}>en</DropdownItem>
+                                <DropdownItem className={huLangActive} onClick={() => toggleLang('hu')}>hu</DropdownItem>
                             </DropdownMenu>
                         </Dropdown>
-                        <Nav.Link href="#">.login(u,p)</Nav.Link>
+                        <Nav.Link href="#">{t('navbar.login')}</Nav.Link>
                     </Nav>
                 </Navbar.Collapse>
             </Container>
         </Navbar>
     );
-};
+}
 
 export default NavBar;

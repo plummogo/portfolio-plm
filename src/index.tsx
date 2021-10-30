@@ -5,25 +5,23 @@ import HelloThere from './components/application/Hello/HelloThere';
 import AboutMe from './components/application/About/AboutMe';
 import Skill from './components/application/Skills/Skill';
 import reportWebVitals from './reportWebVitals';
-import { Container, Row, Col } from 'react-bootstrap';
-import { LocalizeProvider } from 'react-localize-redux';
+import { Container, Row } from 'react-bootstrap';
+import './utils/i18n/i18n';
 
 ReactDOM.render(
   <>
-    <LocalizeProvider>
-      <NavBar />
-      <Container>
-        <Row>
-          <HelloThere />
-        </Row>
-        <Row>
-          <AboutMe />
-        </Row>
-        <Row>
-          <Skill />
-        </Row>
-      </Container>
-    </LocalizeProvider>
+    <NavBar />
+    <Container>
+      <Row>
+        <HelloThere />
+      </Row>
+      <Row>
+        <AboutMe />
+      </Row>
+      <Row>
+        <Skill />
+      </Row>
+    </Container>
   </>,
   document.getElementById('root')
 );

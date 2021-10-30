@@ -1,0 +1,22 @@
+{
+    "navbar.about": ".rólam",
+    "navbar.skills": ".szkillz",
+    "navbar.hobbies": ".hobbik",
+    "navbar.contact": ".kapcsolat",
+    "navbar.lang": ".állítsNyelvet",
+    "navbar.login": ".bejelentkezés(f,j)",
+    "hello.name": "Szilvási Péter vagyok",
+    "hello.position": ".szoftverFejlesztő",
+    "about.greeting": "Szia Uram!",
+    "about.desc": "Leírás",
+    "skills.vscode": "Szeretem a VSCode-ot használni, mivel könnyen használható és sok hasznos feature-e van",
+    "skills.csharp": "TurboPascal volt az első programozási nyelv amit elsajátítottam, utána bele szerettem. Manapság Nodejs-t tanulok",
+    "skills.git": "GIT és TFVC-t is használtam, de inkább GIT-et használok a repo kezelés miatt",
+    "skills.azure": "OKé",
+    "skills.html": "Akik szerint programozási nyelv, törlöm ismerősök közül.",
+    "skills.css": "Szeretem az igényes weboldalakat, SASS-t használok.",
+    "skills.js": "Szeretem a JS-t, aki nem: használja a Netflixet, Youtube-ot anélkül 😉",
+    "skills.react": "sdkléfsdkfds",
+    "skills.yoda": "Tedd vagy ne tedd. Ne próbáld",
+    "skills.default": "Difolt"
+}
