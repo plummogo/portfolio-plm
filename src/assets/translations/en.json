@@ -8,7 +8,7 @@
     "hello.name": "I'm Péter Szilvási",
     "hello.position": ".softwareDeveloper",
     "about.greeting": "Hello there!",
-    "about.desc": "descdescdescdescdescdescdescdescdescdescdescdescdescdescdescdescdescdescdescdescdescdescdescdescdescdescdescdescdescdescdescdescdescdescdescdescdescdescdescdescdescdescdescdescdescdescdescdescdescdescdescdescdescdescdescdesc",
+    "about.desc": "will be filled out",
     "skills.vscode": "I like using Visual Studio Code because its light-weight and easy-to use functionality",
     "skills.csharp": "After my first language (TurboPascal), I love in. Nowadays I prefer learning more Node.Js",
     "skills.git": "I like both using GIT and TFVC. I prefer using GIT because of managing remote repositories is better",

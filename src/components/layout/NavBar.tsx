@@ -18,8 +18,8 @@ const NavBar = () => {
         i18n.changeLanguage(lang);
     };
 
-    let huLangActive = !isActive ? "nav-active" : "";
-    let enLangActive = isActive ? "nav-active" : "";
+    let huLangActive = !isActive ? "nav-active nav-dropdown" : "nav-dropdown";
+    let enLangActive = isActive ? "nav-active nav-dropdown" : "nav-dropdown";
 
     return (
         <Navbar className='navbar bg-transparent' fixed='top' collapseOnSelect expand="lg" bg="dark" variant="dark">
@@ -59,7 +59,7 @@ const NavBar = () => {
                     </Nav>
                     <Nav>
                         <Dropdown>
-                            <DropdownToggle className="bg-transparent no-border">
+                            <DropdownToggle className="bg-transparent no-border nav-dropdown">
                                 {t('navbar.lang')}</DropdownToggle>
                             <DropdownMenu>
                                 <DropdownItem className={enLangActive} onClick={() => toggleLang('en')}>en</DropdownItem>

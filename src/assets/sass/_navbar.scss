@@ -1,17 +1,23 @@
-.nav-link {
-    color: #f9d71c !important;
+.dropdown-item, .nav-link {
+    color: $base-yellow !important;
 }
 
 .nav-active {
-    color: rgb(76, 204, 203) !important;
+    color: $base-blue !important;
 }
 
 .pointer {
     cursor: pointer;
 }
 
-
-.no-border {
+.nav-dropdown {
     border-color: transparent !important;
-    color: #f9d71c !important;
+    &:focus {
+        box-shadow: none !important;
+    }
+}
+
+.dropdown-menu {
+    background-color: transparent !important;
+    border: $base-border !important;
 }

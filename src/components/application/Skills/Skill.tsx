@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import { useState } from 'react';
 import { useTranslation } from 'react-i18next';
 import { Container, Row, Col } from 'react-bootstrap';
 
@@ -33,10 +33,10 @@ const Skill = () => {
     return (
         <Container className='skill-container'>
             <Row>
-                <h1 className='skill-heading'>{t('navbar.skills')}</h1>
+                <h1>{t('navbar.skills')}</h1>
             </Row>
             <Row>
-                <Col>
+                <Col md={8}>
                     <ul className='skill-circle-container'>
                         {['git', 'azure', 'css', 'html', 'js', 'react', 'vscode', 'csharp', 'skill']
                             .map((name, index) => {
@@ -45,16 +45,16 @@ const Skill = () => {
                                         <img
                                             id={name}
                                             tabIndex={index}
-                                            onClick={async (e) => setName(name)}
+                                            onClick={async () => setName(name)}
                                             src={require(`../../../assets/img/skills/${name}.png`).default} />
                                     </li>
                                 )
-                            })};
+                            })}
                     </ul>
                 </Col>
-                <Col className='skill-desc-container'>
-                    <h2 className='skill-heading skill-heading2'>{desc[0].text}</h2>
-                    <p className='skill-text-desc'>{desc[0].value}</p>
+                <Col className='desc-container' md={4}>
+                    <h2>{desc[0].text}</h2>
+                    <p className='skill-desc-text'>{desc[0].value}</p>
                 </Col>
             </Row>
         </Container>

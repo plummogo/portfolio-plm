@@ -1,5 +1,6 @@
 .hello-container {
-    min-height: 500px;
+    min-height: 500px !important;
+    margin: 10% auto !important;
     overflow: hidden;
 }
 
@@ -10,14 +11,15 @@
 
     &.hello-heading2 {
         font-size: 2.5rem;
+        margin: 0;
     }
 }
 
 .seperator-img {
-    content: url("/assets/img/seperator.png");
+    content: url(#{$img-path}/hello/seperator.png);
     display: block;
     margin: 2% auto;
-    width: 50%;
+    width: 50% !important;
 
     &.rotated {
         transform: rotate(180deg);
