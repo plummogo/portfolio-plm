@@ -2,7 +2,7 @@
     "navbar.about": ".aboutMe",
     "navbar.skills": ".skills",
     "navbar.hobbies": ".hobbies",
-    "navbar.contact": ".conatct",
+    "navbar.contact": ".contact",
     "navbar.lang": ".setLang",
     "navbar.login": ".login(u,p)",
     "hello.name": "I'm Péter Szilvási",

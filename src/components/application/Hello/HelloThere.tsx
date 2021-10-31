@@ -1,8 +1,15 @@
 import { useTranslation } from "react-i18next";
 import { Container, Row } from "react-bootstrap";
+import 'react-star-wars-crawl/lib/index.css';
+import Crawl from 'react-star-wars-crawl';
+import { useCallback, useState, useEffect } from "react";
 
-const HelloThere = () => {
+function HelloThere() {
   const { t, i18n } = useTranslation();
+  const [, updateState] = useState();
+  
+  setInterval(() => {
+  }, 10000);
 
   return (
     <Container className='hello-container'>
@@ -10,10 +17,10 @@ const HelloThere = () => {
         <img className='hello-img seperator-img' />
       </Row>
       <Row>
-        <h1 className='hello-heading'>{t('hello.name')}</h1>
-      </Row>
-      <Row>
-        <h2 className='hello-heading hello-heading2'>{t('hello.position')}</h2>
+        <Crawl
+          title={t('hello.name')}
+          subTitle={t('hello.position')}
+          text='Hello' />
       </Row>
       <Row>
         <img className='hello-img seperator-img rotated' />

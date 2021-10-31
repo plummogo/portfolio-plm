@@ -8,6 +8,7 @@ import HelloThere from './components/application/Hello/HelloThere';
 import AboutMe from './components/application/About/AboutMe';
 import Skill from './components/application/Skills/Skill';
 import Hobby from './components/application/Hobbies/Hobby';
+import Contact from './components/application/Contact/Contact';
 
 ReactDOM.render(
   <>
@@ -22,8 +23,11 @@ ReactDOM.render(
       <Row>
         <Skill />
       </Row>
-      <Row>
+      <Row className='component-row'>
         <Hobby />
+      </Row>
+      <Row>
+        <Contact />
       </Row>
     </Container>
   </>,

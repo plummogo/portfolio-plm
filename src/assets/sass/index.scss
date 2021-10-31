@@ -4,6 +4,7 @@
 @import "navbar";
 @import "about";
 @import "hobby";
+@import "contact";
 @import "../../../node_modules/bootstrap/scss/bootstrap.scss";
 @import url("https://fonts.googleapis.com/css2?family=Oswald:wght@300&display=swap");
 
@@ -38,4 +39,8 @@ h2 {
     border: $base-border;
     margin-bottom: 5%;
     overflow: hidden;
+}
+
+.component-row {
+    margin-top: 10%;
 }
