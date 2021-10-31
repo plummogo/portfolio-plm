@@ -18,5 +18,11 @@
     "skills.js": "Szeretem a JS-t, aki nem: használja a Netflixet, Youtube-ot anélkül 😉",
     "skills.react": "sdkléfsdkfds",
     "skills.yoda": "Tedd vagy ne tedd. Ne próbáld",
-    "skills.default": "Difolt"
+    "skills.default": "Difolt",
+    "hobbies.r2d2": "R2D2 építés",
+    "hobbies.r2d2.desc": "Blabal",
+    "hobbies.mediacenter": "Saját media center",
+    "hobbies.mediacenter.desc": "blabla2",
+    "hobbies.gaming": "Géming",
+    "hobbies.gaming.desc": "blabla3"
 }

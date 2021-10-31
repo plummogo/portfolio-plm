@@ -18,5 +18,11 @@
     "skills.js": "I like JavaScript who does not, just watch Netflix or Youtube without it 😉",
     "skills.react": "Like heaven with typescript, I used ASP.NET with Razor syntax and AngularJs, but React is my cup of Like heaven with typescript, I used ASP.NET with Razor syntax and AngularJs, but React is my cup of tea.",
     "skills.yoda": "Do or do not. There is no try.",
-    "skills.default": "Please click on skill circle, to see my opinion!"
+    "skills.default": "Please click on skill circle, to see my opinion!",
+    "hobbies.r2d2": "Building R2D2",
+    "hobbies.r2d2.desc": "Blabal",
+    "hobbies.mediacenter": "Own media center",
+    "hobbies.mediacenter.desc": "blabla2",
+    "hobbies.gaming": "Gaming",
+    "hobbies.gaming.desc": "blabla3"
 }

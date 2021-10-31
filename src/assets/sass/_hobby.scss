@@ -1,0 +1,28 @@
+.hobby-container {
+    min-height: 600px !important;
+}
+
+.accordion-button,
+.accordion-item {
+    background-color: transparent !important;
+}
+
+.accordion-border {
+    border: $base-border !important;
+}
+
+.accordion-item {
+    margin: 2% 3% 3%!important
+}
+
+.accordion-button {
+    color: $base-blue !important;
+}
+
+.accordion-button:focus {
+    box-shadow: none !important;
+}
+
+.accordion-button::after {
+    background-color: $base-yellow !important;
+}

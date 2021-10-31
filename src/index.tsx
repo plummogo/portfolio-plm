@@ -1,12 +1,13 @@
 import ReactDOM from 'react-dom';
+import reportWebVitals from './reportWebVitals';
 import './assets/sass/index.scss';
+import './utils/i18n/i18n';
+import { Container, Row } from 'react-bootstrap';
 import NavBar from './components/layout/NavBar';
 import HelloThere from './components/application/Hello/HelloThere';
 import AboutMe from './components/application/About/AboutMe';
 import Skill from './components/application/Skills/Skill';
-import reportWebVitals from './reportWebVitals';
-import { Container, Row } from 'react-bootstrap';
-import './utils/i18n/i18n';
+import Hobby from './components/application/Hobbies/Hobby';
 
 ReactDOM.render(
   <>
@@ -20,6 +21,9 @@ ReactDOM.render(
       </Row>
       <Row>
         <Skill />
+      </Row>
+      <Row>
+        <Hobby />
       </Row>
     </Container>
   </>,

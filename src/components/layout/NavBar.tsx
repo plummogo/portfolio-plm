@@ -22,7 +22,7 @@ const NavBar = () => {
     let enLangActive = isActive ? "nav-active nav-dropdown" : "nav-dropdown";
 
     return (
-        <Navbar className='navbar bg-transparent' fixed='top' collapseOnSelect expand="lg" bg="dark" variant="dark">
+        <Navbar className='navbar' fixed='top' collapseOnSelect expand="lg" variant="dark">
             <Container>
                 <Navbar.Brand className="navbar-link pointer" onClick={() => window.scrollTo(0, 0)}>plummogo</Navbar.Brand>
                 <Navbar.Toggle aria-controls="basic-navbar-nav" />
