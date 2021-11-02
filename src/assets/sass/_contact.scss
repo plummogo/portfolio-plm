@@ -1,3 +1,30 @@
-.contact-form {
-    text-align: center;
+.contact-icon {
+    color: $base-yellow;
+    &:hover {
+        color: $base-blue;
+    }
+}
+
+.awssld,
+.awssld--organic-arrows,
+.awssld__wrapper,
+.awssld__container,
+.awssld__box,
+.awssld__box awssld--active {
+    // height: 50% !important;
+    width: 50% !important;
+    margin: 0 auto;
+}
+
+.awssld__content {
+    margin: 0 auto;
+    justify-content: center;
+    background-color: transparent !important;
+    border: $base-border;
+    border-radius: 25px;
+    // height: 50% !important;
+}
+
+.awssld__bullets, .awssld__controls {
+    visibility: hidden;
 }
