@@ -1,30 +1,50 @@
+p {
+    margin: 0 !important;
+}
+
 .contact-icon {
+    margin-left: 20px;
     color: $base-yellow;
+    animation: blinker 1s linear infinite;
     &:hover {
         color: $base-blue;
     }
 }
 
+.contact-header {
+    margin: 0 !important;
+}
+
+.contact-desc-0 {
+    margin: 10% 0 0 !important;
+    color: gray;
+}
+
+.awssld {
+    display: inline-block !important;
+} 
+
 .awssld,
-.awssld--organic-arrows,
-.awssld__wrapper,
-.awssld__container,
-.awssld__box,
-.awssld__box awssld--active {
-    // height: 50% !important;
+.awssld__wrapper
+{
     width: 50% !important;
-    margin: 0 auto;
+}
+
+.contact-row {
+    border: $base-border;
+    border-radius: 25px;
+    background-image: url(#{$img-path}/contact/cmd.png);
+    color: gray !important;
 }
 
 .awssld__content {
-    margin: 0 auto;
-    justify-content: center;
     background-color: transparent !important;
-    border: $base-border;
-    border-radius: 25px;
-    // height: 50% !important;
+    align-items:flex-start !important;
+    justify-content: flex-start !important;
 }
 
-.awssld__bullets, .awssld__controls {
+.awssld__bullets,
+.awssld__controls {
     visibility: hidden;
 }
+  

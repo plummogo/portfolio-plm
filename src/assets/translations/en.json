@@ -24,5 +24,11 @@
     "hobbies.mediacenter": "Own media center",
     "hobbies.mediacenter.desc": "blabla2",
     "hobbies.gaming": "Gaming",
-    "hobbies.gaming.desc": "blabla3"
+    "hobbies.gaming.desc": "blabla3",
+    "contact-desc-header": "Contact me on ",
+    "contact-desc-0": "Microsoft Windows [Version 10.0.19042.1288]",
+    "contact-desc-1": "(c) Microsoft Corporation. All rights reserved.",
+    "contact-desc-2": "C:\\Users\\plummogo\\plm",
+    "contact-desc-3": "Welcome to plm v14.18.0.",
+    "contact-desc-4":"Type .help for more information."
 }

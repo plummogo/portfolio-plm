@@ -17,22 +17,37 @@ const Contact = () => {
             <Row>
                 <h1>{t('navbar.contact')}</h1>
             </Row>
-            <Row>
-                <Col>
-                    <AutoplaySlider
-                        play={true}
-                        cancelOnInteraction={false}
-                        interval={6000}
-                        cssModule={AwesomeSliderStyles}
-                    >
-                        <div><a className='contact-icon' href='https://www.linkedin.com/in/peter-szilvasi-ba91b6147/' target='_blank'><LinkedInIcon /></a></div>
-                        <div><a className='contact-icon' href='https://github.com/plummogo' target='_blank'><GitHubIcon /></a></div>
-                        <div><a className='contact-icon'href='cv.pdf' download><BadgeIcon /></a></div>
-                    </AutoplaySlider>
-                </Col>
-                <Col>
-                dummy text for it later
-                </Col>
+            <Row className='contact-row'>
+                <p className='contact-desc-0'>{t('contact-desc-0')}</p>
+                <p>{t('contact-desc-1')}</p>
+                <p>{t('contact-desc-2')}</p>
+                <p>{t('contact-desc-3')}</p>
+                <p>{t('contact-desc-4')}</p>
+                <AutoplaySlider
+                    play={true}
+                    cancelOnInteraction={false}
+                    interval={6000}
+                    cssModule={AwesomeSliderStyles}
+                >
+                    <span>
+                        {'> '}Linkedin
+                        <a href='https://www.linkedin.com/in/peter-szilvasi-ba91b6147/' target='_blank'>
+                            <LinkedInIcon className='contact-icon' />
+                        </a>
+                    </span>
+                    <div>
+                        {'> '}GitHub
+                        <a href='https://github.com/plummogo' target='_blank'>
+                            <GitHubIcon className='contact-icon' />
+                        </a>
+                    </div>
+                    <div>
+                        {'> '}cv
+                        <a href={process.env.PUBLIC_URL + '/cv.pdf'} target='_blank'>
+                            <BadgeIcon className='contact-icon' />
+                        </a>
+                    </div>
+                </AutoplaySlider>
             </Row>
         </Container >
     );

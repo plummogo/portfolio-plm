@@ -4,28 +4,33 @@
     overflow: hidden;
 }
 
-.hello-heading {
+.hello-img {
+    content: url(#{$img-path}/hello/hello.png);
     text-align: center;
-    vertical-align: middle;
-    font-size: 5rem;
-
-    &.hello-heading2 {
-        font-size: 2.5rem;
-        margin: 0;
-    }
+    width: 50% !important;
 }
 
 .seperator-img {
     content: url(#{$img-path}/hello/seperator.png);
     display: block;
-    margin: 2% auto;
+    margin: 0 auto;
     width: 50% !important;
-
-    &.rotated {
-        transform: rotate(180deg);
-    }
+    animation: lightSaber 0.8s linear 0s infinite normal none;
+    transform-origin: 50% 50%;
 }
 
 .crawler {
     background-color: transparent !important;
+}
+
+.fade {
+    top: 300px !important;
+}
+
+.crawler > div{
+    min-height: 1% !important;
+}
+
+.crawler > section > div {
+    animation: 10s linear 0s infinite normal none running crawl !important;
 }
