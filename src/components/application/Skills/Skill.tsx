@@ -4,16 +4,17 @@ import { Container, Row, Col } from 'react-bootstrap';
 
 const Skill = () => {
     const [name, setName] = useState('default');
-    const { t, i18n } = useTranslation();
+    const { t } = useTranslation();
 
-    const images = ['git', 'azure', 'css', 'html', 'js', 'react', 'vscode', 'csharp', 'skill']
-        .map((name, index) => {
+    ['git', 'azure', 'css', 'html', 'js', 'react', 'vscode', 'csharp', 'skill']
+        .forEach((name, index) => {
             <li key={name}>
                 <img
                     id={name}
                     tabIndex={index}
                     onClick={async (e) => setName(name)}
-                    src={require(`../../../assets/img/skills/${name}.png`).default} />
+                    src={require(`../../../assets/img/skills/${name}.png`).default}
+                    alt={name} />
             </li>
         });
 
@@ -46,7 +47,8 @@ const Skill = () => {
                                             id={name}
                                             tabIndex={index}
                                             onClick={async () => setName(name)}
-                                            src={require(`../../../assets/img/skills/${name}.png`).default} />
+                                            src={require(`../../../assets/img/skills/${name}.png`).default}
+                                            alt={name} />
                                     </li>
                                 )
                             })}

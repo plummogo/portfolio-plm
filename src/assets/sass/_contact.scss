@@ -35,6 +35,7 @@ p {
     border-radius: 25px;
     background-image: url(#{$img-path}/contact/cmd.png);
     color: gray !important;
+    overflow: hidden;
 }
 
 .awssld__content {

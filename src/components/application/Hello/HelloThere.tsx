@@ -4,13 +4,13 @@ import 'react-star-wars-crawl/lib/index.css';
 import Crawl from 'react-star-wars-crawl';
 
 function HelloThere() {
-  const { t, i18n } = useTranslation();
-  const subTitle = <img className='hello-img' />
+  const { t } = useTranslation();
+  const subTitle = <img className='hello-img' alt='hello' />
 
   return (
     <Container className='hello-container'>
       <Row>
-        <img className='hello-img seperator-img' />
+        <img className='hello-img seperator-img' alt='separator-start'/>
       </Row>
       <Row>
         <Crawl
@@ -20,7 +20,7 @@ function HelloThere() {
         />
       </Row>
       <Row>
-        <img className='hello-img seperator-img rotated' />
+        <img className='hello-img seperator-img' alt='separator-end' />
       </Row>
     </Container>
   );

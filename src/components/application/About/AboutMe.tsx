@@ -15,7 +15,7 @@ const AboutMe = () => {
                     <h2 className='about-desc'>{t('about.desc')}</h2>
                 </Col>
                 <Col md={4} >
-                    <img className='about-plm-img' />
+                    <img className='about-plm-img' alt='about-plm-img' />
                     <p className='about-plm-desc'>Szilvási István Péter</p>
                 </Col>
             </Row>

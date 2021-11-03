@@ -1,5 +1,5 @@
 import { useTranslation } from "react-i18next";
-import { Col, Container, Row } from "react-bootstrap";
+import { Container, Row } from "react-bootstrap";
 import AwesomeSlider from 'react-awesome-slider';
 import AwesomeSliderStyles from 'react-awesome-slider/src/styles';
 import withAutoplay from 'react-awesome-slider/dist/autoplay';
@@ -31,19 +31,19 @@ const Contact = () => {
                 >
                     <span>
                         {'> '}Linkedin
-                        <a href='https://www.linkedin.com/in/peter-szilvasi-ba91b6147/' target='_blank'>
+                        <a href='https://www.linkedin.com/in/peter-szilvasi-ba91b6147/' target='_blank' rel="noreferrer">
                             <LinkedInIcon className='contact-icon' />
                         </a>
                     </span>
                     <div>
                         {'> '}GitHub
-                        <a href='https://github.com/plummogo' target='_blank'>
+                        <a href='https://github.com/plummogo' target='_blank' rel="noreferrer">
                             <GitHubIcon className='contact-icon' />
                         </a>
                     </div>
                     <div>
                         {'> '}cv
-                        <a href={process.env.PUBLIC_URL + '/cv.pdf'} target='_blank'>
+                        <a href={process.env.PUBLIC_URL + '/cv.pdf'} target='_blank' rel="noreferrer">
                             <BadgeIcon className='contact-icon' />
                         </a>
                     </div>
